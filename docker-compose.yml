@@ -43,7 +43,7 @@ services:
     restart: always
     volumes:
       - ./letsencrypt:/etc/letsencrypt
-    command: certonly --webroot --webroot-path=/var/www/html --email amiryfatima.me@example.com --agree-tos --no-eff-email --domains www.amiryfatima.me
+    command: certonly --webroot --webroot-path=/var/www/html --email amiryfatima@amiryfatima.me --agree-tos --no-eff-email --domains www.amiryfatima.me
 
 %İşlem2
 version: "3"
@@ -66,10 +66,10 @@ services:
     image: mariadb
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: 123456  # öğrenci numaranız
+      MYSQL_ROOT_PASSWORD: 030119064  # öğrenci numaram
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
-      MYSQL_PASSWORD: 123456  # öğrenci numaranız
+      MYSQL_PASSWORD: 030119064  # öğrenci numaram
     volumes:
       - ./mysql:/var/lib/mysql
 
@@ -91,5 +91,5 @@ services:
     restart: always
     volumes:
       - ./letsencrypt:/etc/letsencrypt
-    command: certonly --webroot --webroot-path=/var/www/html --email amiryfatima.me@example.com --agree-tos --no-eff-email --domains www.amiryfatima.me
+    command: certonly --webroot --webroot-path=/var/www/html --email amiryfatima@amiryfatima.me --agree-tos --no-eff-email --domains www.amiryfatima.me
 
